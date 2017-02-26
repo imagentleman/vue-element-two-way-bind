@@ -1,0 +1,28 @@
+<!doctype html>
+
+<meta charset=utf-8>
+
+<div id=example>
+  <p v-two-way-bind=message>hello world!</p>
+
+  <input v-model=message
+         placeholder="edit me">
+
+  <div>
+    {{ message }}
+  </div>
+</div>
+
+<script src="https://unpkg.com/vue@2.1.10/dist/vue.js"></script>
+<script src="vue-element-two-way-bind.js"></script>
+
+<script>
+  var state = {
+    message: ''
+  };
+
+  var app = new Vue({
+    el: '#example',
+    data: state
+  });
+</script>
