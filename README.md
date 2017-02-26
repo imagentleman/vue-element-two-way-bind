@@ -45,13 +45,13 @@ https://imagentleman.github.io/vue-element-two-way-bind/example.html
 <p v-two-way-bind="message">hello world!</p>
 ```
 
-The value of the element using the directive (in this case "hello world!") will be stored on the property ```message``` of the component's/instance data (```this.message```).
+The value (in this case "hello world!") of the element (p) using the directive will be stored on the property ```message``` of the component's/instance data (```this.message```) when the vue component/instance is first mounted.
 
-The template of element using the directive will also change from the value ("hello world!") to the interpolation of the property ```{{ message }}```.
+The template of the element using the directive will also change from the value ("hello world!") to the interpolation of the property ```{{ message }}```.
 
 ## Why would i use this?
 
-The directive basically allows to do two-way binding on elements that are not inputs in a similar way to ```v-model```.
+The directive basically allows you to do two-way binding on elements that are not inputs in a similar way to ```v-model```.
 
 An use case would be a have project, where the state/data doesn't come from an api or a window object, but has to come from the DOM. 
 A project where the back end is the only one with access to the content and renders it only and directly into HTML.
